@@ -1,13 +1,14 @@
 import requests
 import json
 import pprint
+import secrets
 azure_api_url = "https://hzcomputervisionresource.cognitiveservices.azure.com/computervision/imageanalysis:analyze?api-version=2023-02-01-preview&features=Tags&language=en&gender-neutral-caption=False"
-subscription_key = "812a6d11472b44c38608674475e376de"
+azure_subscription_key = "812a6d11472b44c38608674475e376de"
 
 def getImageDescription():
     response = None
     try:
-        headers = {'Ocp-Apim-Subscription-Key': subscription_key,
+        headers = {'Ocp-Apim-Subscription-Key': azure_subscription_key,
                    'Content-Type': 'application/octet-stream'}
 
         filepath = r"/home/hengelz/Projects/STEM/images/lastPhoto.jpg" 
