@@ -1,0 +1,10 @@
+{
+	"isFeederActive" : false,
+	"feederSchedule" : 
+	{
+		"morning" : "7:00 AM",
+		"evening" : "6:00 PM"
+	},
+	"lastTimeFeederRan" : null
+}
+
