@@ -1,10 +1,10 @@
 import requests
 import json
 import pprint
-import secrets
+from .petfeeder_secrets import azure_subscription_key
 azure_api_url = "https://hzcomputervisionresource.cognitiveservices.azure.com/computervision/imageanalysis:analyze?api-version=2023-02-01-preview&features=Tags&language=en&gender-neutral-caption=False"
-azure_subscription_key = "812a6d11472b44c38608674475e376de"
 
+print('azure_subscription_key',azure_subscription_key)
 def getImageDescription():
     response = None
     try:

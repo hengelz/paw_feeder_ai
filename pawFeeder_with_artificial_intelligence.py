@@ -5,6 +5,8 @@ import firebase_admin
 from firebase_admin import credentials, db, storage
 from picamera2 import Picamera2, Preview
 from lib import image_analyzer
+from lib import petfeeder_secrets
+
 
 # Turn on/off AI
 useAI = True
@@ -160,5 +162,6 @@ def main():
             webPhotoButton = False
             takePhoto()
             
-### Start program            
-main()
+### Start program
+if __name__ == "__main__":
+    main()
